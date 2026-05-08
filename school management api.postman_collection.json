@@ -1,0 +1,76 @@
+{
+  "info": {
+    "_postman_id": "87c7897b-d37e-46fd-918f-0115a689adbb",
+    "name": "school management api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54625757",
+    "_collection_link": "https://go.postman.co/collection/54625757-87c7897b-d37e-46fd-918f-0115a689adbb?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "List Schools",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://school-api-assignment-xo5a.onrender.com/listSchools?latitude=40.7306&longitude=-73.9352",
+          "protocol": "https",
+          "host": [
+            "school-api-assignment-xo5a",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "listSchools"
+          ],
+          "query": [
+            {
+              "key": "latitude",
+              "value": "40.7306"
+            },
+            {
+              "key": "longitude",
+              "value": "-73.9352"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add school",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Central High\",\r\n    \"address\": \"123 Main St\",\r\n    \"latitude\": 40.7128,\r\n    \"longitude\": -74.0060\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://school-api-assignment-xo5a.onrender.com/addSchool",
+          "protocol": "https",
+          "host": [
+            "school-api-assignment-xo5a",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "addSchool"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
